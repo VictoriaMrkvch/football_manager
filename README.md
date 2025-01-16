@@ -5,7 +5,7 @@ and players. It includes features for performing basic CRUD operations on teams 
 players, calculating player transfer fees, and managing transfers between teams.
 
 ### Technologies and Tools Used:
-1. Spring Boot v3.1.5
+1. Spring Boot v3.4.1
 2. Spring Data JPA
 3. MySQL v8.0.33
 4. Docker
