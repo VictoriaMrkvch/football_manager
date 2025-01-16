@@ -1,0 +1,100 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-player1
+      author: VictoriaYakobshe
+      changes:
+        - insert:
+            tableName: players
+            columns:
+              - column:
+                  name: name
+                  value: "Vitaliy Kholod"
+              - column:
+                  name: age
+                  valueNumeric: 21
+              - column:
+                  name: experience
+                  valueNumeric: 29
+              - column:
+                  name: team_id
+                  valueNumeric: 1
+
+  - changeSet:
+      id: insert-player2
+      author: VictoriaYakobshe
+      changes:
+        - insert:
+            tableName: players
+            columns:
+              - column:
+                  name: name
+                  value: "Roman Didyk"
+              - column:
+                  name: age
+                  valueNumeric: 24
+              - column:
+                  name: experience
+                  valueNumeric: 33
+              - column:
+                  name: team_id
+                  valueNumeric: 1
+
+  - changeSet:
+      id: insert-player3
+      author: VictoriaYakobshe
+      changes:
+        - insert:
+            tableName: players
+            columns:
+              - column:
+                  name: name
+                  value: "Roman Honcharenko"
+              - column:
+                  name: age
+                  valueNumeric: 22
+              - column:
+                  name: experience
+                  valueNumeric: 18
+              - column:
+                  name: team_id
+                  valueNumeric: 2
+
+  - changeSet:
+      id: insert-player4
+      author: VictoriaYakobshe
+      changes:
+        - insert:
+            tableName: players
+            columns:
+              - column:
+                  name: name
+                  value: "Dmytro Godya"
+              - column:
+                  name: age
+                  valueNumeric: 23
+              - column:
+                  name: experience
+                  valueNumeric: 35
+              - column:
+                  name: team_id
+                  valueNumeric: 2
+
+  - changeSet:
+      id: insert-player5
+      author: VictoriaYakobshe
+      changes:
+        - insert:
+            tableName: players
+            columns:
+              - column:
+                  name: name
+                  value: "Bohdan Khoma"
+              - column:
+                  name: age
+                  valueNumeric: 20
+              - column:
+                  name: experience
+                  valueNumeric: 16
+              - column:
+                  name: team_id
+                  valueNumeric: 3

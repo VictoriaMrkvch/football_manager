@@ -1,0 +1,42 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-team1
+      author: VictoriaYakobshe
+      changes:
+        - insert:
+            tableName: teams
+            columns:
+              - column:
+                  name: name
+                  value: "Rukh"
+              - column:
+                  name: account_balance
+                  valueNumeric: 1500000
+
+  - changeSet:
+      id: insert-team2
+      author: VictoriaYakobshe
+      changes:
+        - insert:
+            tableName: teams
+            columns:
+              - column:
+                  name: name
+                  value: "Veres"
+              - column:
+                  name: account_balance
+                  valueNumeric: 1100000
+
+  - changeSet:
+      id: insert-team3
+      author: VictoriaYakobshe
+      changes:
+        - insert:
+            tableName: teams
+            columns:
+              - column:
+                  name: name
+                  value: "Kryvbas"
+              - column:
+                  name: account_balance
+                  valueNumeric: 1000000

@@ -1,0 +1,291 @@
+{
+	"info": {
+		"_postman_id": "80f304fe-e041-4f06-9a44-8a61a78f0485",
+		"name": "football manager",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31179919"
+	},
+	"item": [
+		{
+			"name": "team",
+			"item": [
+				{
+					"name": "create team",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Veres\",\r\n    \"accountBalance\" : 100000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8088/teams",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"teams"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all teams",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8088/teams",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"teams"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get team by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8088/teams/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"teams",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update team by id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"Zorya\",\r\n    \"accountBalance\" : 150000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8088/teams/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"teams",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete team by id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8088/teams/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"teams",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "player",
+			"item": [
+				{
+					"name": "create player",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"Vasul Sych\",\r\n    \"age\" : 23,\r\n    \"experience\" : 20,\r\n    \"teamId\" : 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8088/players",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"players"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all players",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8088/players",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"players"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get player by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8088/players/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"players",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update player by id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"Vasul Sych\",\r\n    \"age\" : 23,\r\n    \"experience\" : 55\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8088/players/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"players",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete player by id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8088/players/4",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"players",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all players by team id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8088/players/team/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"players",
+								"team",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "transfer player",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "localhost:8088/players/3?newTeamId=3&commission=1",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"players",
+								"3"
+							],
+							"query": [
+								{
+									"key": "newTeamId",
+									"value": "3"
+								},
+								{
+									"key": "commission",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
